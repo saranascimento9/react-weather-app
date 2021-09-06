@@ -1,8 +1,27 @@
 .App {
-  max-width: 600px;
+  max-width: 800px;
   margin: 30px auto;
 }
 .App footer {
   font-size: 11px;
   margin: 10px 0;
+}
+
+.container {
+  /* border: 1px solid #dadde1;
+  border-radius: 4px; */
+  color: rgb(135, 134, 135);
+  box-shadow: 0px 3px 32px 1px rgba(41, 110, 131, 0.3);
+  background-color: #f1fbff;
+  padding: 0;
+}
+.imagemDireita {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(./jeremy-bishop-IRsY8g_TvxM-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

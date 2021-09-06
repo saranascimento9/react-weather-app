@@ -6,21 +6,19 @@ import WeatherTemperature from "./WeatherTemperature.js";
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <h1>{props.data.city}</h1>
-      <ul>
-        <li>
-          <FormattedDate date={props.data.date} />
-        </li>
-        <li className="text-capitalize">{props.data.description}</li>
-      </ul>
-      <div className="row mt-3">
-        <div className="col-6">
+      <div className="row">
+        <div className="col-12">
+          <h1>{props.data.city}</h1>
           <WeatherIcon code={props.data.icon} />
-
           <WeatherTemperature celsius={props.data.temperature} />
         </div>
-
-        <div className="col-6">
+      </div>
+      <div className="row mt-3">
+        <div className="col-5">
+          <FormattedDate date={props.data.date} />
+          <span className="text-capitalize">{props.data.description}</span>
+        </div>
+        <div className="col-5">
           <ul>
             <li>Humidity: {props.data.humidity}%</li>
             <li>Wind: {Math.round(props.data.wind)}km/h</li>
