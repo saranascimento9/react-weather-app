@@ -1,0 +1,17 @@
+.WeatherForecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.forecast-max {
+  color: #046167;
+}
+
+.forecast-min {
+  color: #01a1ad;
+  margin-left: 5px;
+}
+
+.forecast-day {
+  color: #01a1ad;
+}
